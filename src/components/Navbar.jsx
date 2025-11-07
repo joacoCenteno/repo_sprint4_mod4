@@ -3,7 +3,7 @@ import React from 'react'
 const Navbar = () => {
   return (
     <>
-    <nav className='w-full fixed bg-transparent backdrop-blur-xs flex justify-between px-10 items-center z-10'>
+    <nav className='w-full fixed bg-transparent backdrop-blur-xs flex justify-between px-10 items-center z-100'>
 
         <div>
             <img src="https://thesimpsonsapi.com/logo.webp" alt="" width={250}/>

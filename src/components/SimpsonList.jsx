@@ -3,13 +3,14 @@ import { useSimpson } from '../contexts/SimpsonContext'
 import SimpsonCard from './SimpsonCard'
 import { useModalContext } from '../contexts/ModalContext'
 import { MutatingDots } from 'react-loader-spinner'
+import SimpsonFavorites from '../components/SimpsonFavorites'
 
 const SimpsonList = () => {
   const {loading} = useSimpson()
   const {isModalOpen} = useModalContext()
   return (
     <>
-    <div className={`px-30 pb-20  flex flex-wrap justify-center gap-7 transition-all duration-300 mt-5 ${isModalOpen ? "md:w-[calc(100%-24rem)]": "w-full"}`}>
+    <div className={` px-10 md:px-30 pb-20  flex flex-wrap justify-center gap-7 transition-all duration-300 mt-5 ${isModalOpen ? "md:w-[calc(100%-24rem)]": "w-full"}`}>
       <div>
       {loading && <><MutatingDots
         visible={true}
@@ -24,7 +25,10 @@ const SimpsonList = () => {
         /></>}
       </div> 
       <SimpsonCard/>
+      <SimpsonFavorites/>
     </div>
+
+    
 
     </>
   )

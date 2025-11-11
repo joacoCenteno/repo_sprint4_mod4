@@ -21,13 +21,13 @@ const SimpsonForm = () => {
     }
 
   return (
-    <>  <h1 className='px-20 text-2xl pt-5 font-bold text-amber-200'>Seleccione Cantidad de personajes</h1>
-        <div className='flex pt-5 px-20 justify-between'>
+    <>  <h1 className='px-5 md:px-20 text-2xl pt-5 font-bold text-amber-200'>Seleccione Cantidad de personajes</h1>
+        <div className='flex pt-5 px-2 md:px-20 justify-center md:justify-between flex-wrap gap-3 md:gap-0'>
         
         <div>
             <form action="" onSubmit={handleSubmit}>
                 <input type="number" onChange={(e) => setCantidad(e.target.value)} className='border-b-2 border-blue-400 p-1 focus:outline-none w-60 text-blue-600' placeholder='Cantidad de Personajes'/>
-                <button type="submit" className='bg-blue-400 px-3 text-white ml-3 rounded-2xl cursor-pointer py-1'>Obtener</button>
+                <button type="submit" className='bg-blue-400 px-3 text-white ml-3 rounded-2xl mt-2 md:mt-0 cursor-pointer py-1'>Obtener</button>
             </form>
         </div>
 

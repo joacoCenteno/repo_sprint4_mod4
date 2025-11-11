@@ -10,8 +10,8 @@ const SimpsonList = () => {
   const {isModalOpen} = useModalContext()
   return (
     <>
-    <div className={` px-10 md:px-30 pb-20  flex flex-wrap justify-center gap-7 transition-all duration-300 mt-5 ${isModalOpen ? "md:w-[calc(100%-24rem)]": "w-full"}`}>
-      <div>
+    <div className={` px-3 md:px-30 pb-20  flex flex-wrap justify-center gap-7 transition-all duration-300 mt-5 ${isModalOpen ? "md:w-[calc(100%-24rem)]": "w-full"}`}>
+
       {loading && <><MutatingDots
         visible={true}
         height="100"
@@ -23,7 +23,7 @@ const SimpsonList = () => {
         wrapperStyle={{}}
         wrapperClass=""
         /></>}
-      </div> 
+ 
       <SimpsonCard/>
       <SimpsonFavorites/>
     </div>

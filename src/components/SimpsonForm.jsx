@@ -37,7 +37,7 @@ const SimpsonForm = () => {
             onClick={()=>{
                 favoritos.length != 0 ? toggleModal() : toast.warning("Aun no tienes favs")
             }} 
-            className='cursor-pointer'><i class="bi bi-star-fill"></i> FAVORITOS</button>
+            className='cursor-pointer'><i className="bi bi-star-fill"></i> FAVORITOS</button>
         </div>
         </div>
 
